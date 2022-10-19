@@ -17,11 +17,6 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	runtimeOnly 'com.h2database:h2'
 }
-compileJava{
-	options.compilerArgs = [
-			'-Amapstruct.defaultComponentModel=spring'
-	]
-}
 test{
 	useJUnitPlatform()
 //	exclude '**/*'  // comment to run tests
